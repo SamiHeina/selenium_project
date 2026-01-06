@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+selenium_env/
+
+# pytest cache
+.pytest_cache/
+
+# Test reports
+reports/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+

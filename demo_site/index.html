@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo Job Portal</title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        .hidden { display: none; }
+        .job { cursor: pointer; color: blue; margin: 5px 0; }
+        button { margin-top: 10px; }
+        #confirmation-msg { display: none; color: green; margin-top: 10px; }
+    </style>
+</head>
+
+<body>
+
+<h2>Login</h2>
+<div id="login-section">
+    <input id="username" placeholder="Username"><br><br>
+    <input id="password" type="password" placeholder="Password"><br><br>
+    <button id="login-btn" onclick="login()">Login</button>
+</div>
+
+<div id="jobs-section" class="hidden">
+    <h2>Available Jobs</h2>
+    <div class="job" onclick="openJob()">QA Engineer</div>
+</div>
+
+<div id="job-details" class="hidden">
+    <h2>QA Engineer</h2>
+    <button id="apply-btn" onclick="apply()">Apply</button>
+</div>
+
+<div id="confirmation-msg">
+    ✅ Application submitted!
+</div>
+
+<script>
+function login() {
+    setTimeout(() => {
+        document.getElementById("login-section").classList.add("hidden");
+        document.getElementById("jobs-section").classList.remove("hidden");
+    }, 1000);
+}
+
+function openJob() {
+    setTimeout(() => {
+        document.getElementById("jobs-section").classList.add("hidden");
+        document.getElementById("job-details").classList.remove("hidden");
+    }, 1000);
+}
+
+function apply() {
+    setTimeout(() => {
+        document.getElementById("confirmation-msg").style.display = "block";
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
+
+
