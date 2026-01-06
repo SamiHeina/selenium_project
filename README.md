@@ -16,7 +16,7 @@ selenium_project/
 └── README.md
 
 1. Clone repo: 
-https://github.com/SamiHeina/selenium_project.git
+git clone https://github.com/SamiHeina/selenium_project.git
 cd selenium_project
 
 2. Create & activate virtual environment:
