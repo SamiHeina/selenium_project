@@ -1,7 +1,11 @@
 JOB PORTAL AUTOMATION PROJECT
+
+
 Automated Selenium + Python project simulating user interactions on a demo job portal. Tests include login, job browsing, and applying, with live browser interaction and HTML reports.
 
 Structure:
+
+
 selenium_project/
 ├── demo_site/ # HTML demo website
 ├── pages/ # Page Object Model files
@@ -17,7 +21,8 @@ selenium_project/
 
 1. Clone repo: 
 git clone https://github.com/SamiHeina/selenium_project.git
-cd selenium_project
+
+  cd selenium_project
 
 2. Create & activate virtual environment:
 python -m venv selenium_env
